@@ -52,6 +52,14 @@ public class UserStepDefs {
 
     @When("Execute query to get all columns")
     public void execute_query_to_get_all_columns() {
+        String query="select * from users";
+
+        DB_Util.runQuery(query);
+
+        // All columns
+        List<String> actualColumns = DB_Util.getAllColumnNamesAsList();
+
+        System.out.println("actualColumns = " + actualColumns);
 
     }
     @Then("verify the below columns are listed in result")
