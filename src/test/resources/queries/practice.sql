@@ -23,7 +23,7 @@ select * from users;
 -- -- is returned column shows whether book returned the library
     -- 0 NOT RETURNED
     -- 1 RETURNED
-select * from book_borrow
+select count(*) from book_borrow
 where is_returned=0;
 
 select count(*) from book_borrow
