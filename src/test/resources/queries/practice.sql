@@ -28,3 +28,11 @@ where is_returned=0;
 
 select count(*) from book_borrow
 where returned_date IS NULL;
+
+-- US03
+select name from book_categories;
+
+select b.name,bc.name
+from books b inner join book_categories bc
+    on b.book_category_id=bc.id;
+
