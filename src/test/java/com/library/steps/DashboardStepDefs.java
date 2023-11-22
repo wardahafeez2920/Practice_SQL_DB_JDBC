@@ -17,7 +17,7 @@ public class DashboardStepDefs {
     @Given("the {string} on the home page")
     public void the_on_the_home_page(String userType) {
         loginPage.login(userType);
-        BrowserUtil.waitFor(2);
+        BrowserUtil.waitFor(3);
 
     }
     String actualBorrowedBooksNumber;
