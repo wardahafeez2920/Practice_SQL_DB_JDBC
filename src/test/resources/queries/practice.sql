@@ -32,7 +32,8 @@ where returned_date IS NULL;
 -- US03
 select name from book_categories;
 
-select b.name,bc.name
+select b.name,isbn,author ,b.description,bc.name
 from books b inner join book_categories bc
-    on b.book_category_id=bc.id;
+    on b.book_category_id=bc.id
+where b.name='Clean Code Nataliia';
 
