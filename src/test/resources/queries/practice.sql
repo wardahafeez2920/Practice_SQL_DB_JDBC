@@ -17,3 +17,14 @@ group by name order by 2 desc;
 
 -- US01 -2
 select * from users;
+
+
+-- US02
+-- -- is returned column shows whether book returned the library
+    -- 0 NOT RETURNED
+    -- 1 RETURNED
+select * from book_borrow
+where is_returned=0;
+
+select count(*) from book_borrow
+where returned_date IS NULL;
