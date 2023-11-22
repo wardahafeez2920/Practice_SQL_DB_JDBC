@@ -26,7 +26,7 @@ public class BookStepDefs  {
 
         // Remove ALL from list
         actualCategoryList.remove(0);
-        System.out.println(" After remove ALL Option");
+        System.out.println("After remove ALL Option");
         System.out.println("actualCategoryList = " + actualCategoryList);
 
     }
