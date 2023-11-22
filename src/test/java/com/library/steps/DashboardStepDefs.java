@@ -14,12 +14,6 @@ public class DashboardStepDefs {
     LoginPage loginPage=new LoginPage();
     DashBoardPage dashBoardPage=new DashBoardPage();
 
-    @Given("the {string} on the home page")
-    public void the_on_the_home_page(String userType) {
-        loginPage.login(userType);
-        BrowserUtil.waitFor(3);
-
-    }
     String actualBorrowedBooksNumber;
     @When("the librarian gets borrowed books number")
     public void the_librarian_gets_borrowed_books_number() {
